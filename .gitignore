@@ -1,0 +1,39 @@
+# Ignore environment variable files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Ignore log files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore node_modules (if using Node.js)
+node_modules/
+dist/
+build/
+
+# Ignore dependency directories (Python, Django)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+env/
+
+# Ignore database and generated files
+*.sqlite3
+db.sqlite3
+*.db
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+*.iml
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
