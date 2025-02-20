@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jhan Cedric Antonio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="mb-4" data-aos="fade-up">Python AI Developer</h1>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="100">
+                        Transforming ideas into intelligent solutions through code.
+                    </p>
+                    <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+                    </div>
+                    <div class="social-links" data-aos="fade-up" data-aos-delay="300">
+                        <a href="mailto:antoniojhancedric@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/Ceddddddd" class="social-link" title="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jhan-cedric-antonio-435666297/" class="social-link" title="LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image">
+                    <div class="profile-container" data-aos="fade-up">
+                        <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Jhan Cedric Antonio" class="profile-image">
+                        <div class="tech-stack">
+                            <div class="tech-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-brain"></i>
+                                <span>AI/ML</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-code"></i>
+                                <span>Full Stack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="mb-4" data-aos="fade-up">About Me</h2>
+                    <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">
+                        My career is fueled by a commitment to harnessing AI's transformative power ethically and effectively, ensuring that technology not only augments human capabilities but also paves the way for a smarter, more connected future.
+                    </p>
+                    <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                        <p class="mb-4">
+                            As a Python AI Developer, I specialize in developing intelligent solutions that solve real-world problems. My expertise spans across:
+                        </p>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="expertise-item">
+                                    <i class="fas fa-brain mb-3"></i>
+                                    <h4>AI Development</h4>
+                                    <p>Building and implementing Multi-LLM systems and advanced AI applications using cutting-edge tools like Windsurf, Claude, OpenAI, and Langgraph Studio.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="expertise-item">
+                                    <i class="fas fa-code mb-3"></i>
+                                    <h4>Web Development</h4>
+                                    <p>Creating dynamic web applications using Django, with a focus on building scalable, user-friendly interfaces and robust backend systems.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-4">
+                            I'm passionate about developing solutions that make a real impact, from helping farmers make data-driven decisions with Croptopia to enabling seamless tourism experiences through modern booking systems. My work combines technical excellence with practical applications that serve real user needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">Technical Skills</h2>
+            
+            <!-- AI/ML Skills -->
+            <div class="skill-category mb-4">
+                <h3 class="text-center mb-3" data-aos="fade-up">AI Development</h3>
+                <div class="row justify-content-center g-3">
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <img src="/static/img/skills/python.svg" alt="Python" class="skill-logo">
+                            <h5 class="skill-name">Python</h5>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <img src="/static/img/skills/ai.svg" alt="AI/ML" class="skill-logo">
+                            <h5 class="skill-name">AI/ML</h5>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram skill-logo"></i>
+                            <h5 class="skill-name">Langgraph</h5>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <i class="fas fa-robot skill-logo"></i>
+                            <h5 class="skill-name">Claude</h5>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <img src="{{ url_for('static', filename='img/skills/chatgpt.svg') }}" alt="ChatGPT" class="skill-logo">
+                            <h5 class="skill-name">ChatGPT</h5>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <i class="fas fa-microchip skill-logo"></i>
+                            <h5 class="skill-name">Ollama</h5>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development Skills -->
+            <div class="skill-category mb-4">
+                <h3 class="text-center mb-3" data-aos="fade-up">Web Development</h3>
+                <div class="row justify-content-center g-3">
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <img src="/static/img/skills/html5.svg" alt="HTML" class="skill-logo">
+                            <h5 class="skill-name">HTML</h5>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <img src="/static/img/skills/css3.svg" alt="CSS" class="skill-logo">
+                            <h5 class="skill-name">CSS</h5>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <img src="/static/img/skills/javascript.svg" alt="JavaScript" class="skill-logo">
+                            <h5 class="skill-name">JavaScript</h5>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <img src="/static/img/skills/react.svg" alt="React" class="skill-logo">
+                            <h5 class="skill-name">React</h5>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend & Tools -->
+            <div class="skill-category">
+                <h3 class="text-center mb-3" data-aos="fade-up">Backend & Tools</h3>
+                <div class="row justify-content-center g-3">
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <img src="{{ url_for('static', filename='img/skills/django.svg') }}" alt="Django" class="skill-logo">
+                            <h5 class="skill-name">Django</h5>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <img src="{{ url_for('static', filename='img/skills/git.svg') }}" alt="Git" class="skill-logo">
+                            <h5 class="skill-name">Git</h5>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <i class="fas fa-code skill-logo"></i>
+                            <h5 class="skill-name">Windsurf</h5>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <img src="/static/img/skills/pandas.svg" alt="Pandas" class="skill-logo">
+                            <h5 class="skill-name">Pandas</h5>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <img src="/static/img/skills/docker.svg" alt="Docker" class="skill-logo">
+                            <h5 class="skill-name">Docker</h5>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                        <div class="skill-item">
+                            <img src="/static/img/skills/linux.svg" alt="Linux" class="skill-logo">
+                            <h5 class="skill-name">Linux</h5>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Featured Projects</h2>
+            <div class="row g-4">
+                <!-- Tourism Website -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Tourism Website</h3>
+                            <a href="https://www.guinayangan.site/" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Gmail API</span>
+                        </div>
+                        <div class="project-description">
+                            <ul>
+                                <li>Designed and developed a dynamic tourism website with an integrated booking system, enhancing user experience and functionality.</li>
+                                <li>Deployed and optimized the website for performance, ensuring seamless navigation and responsiveness across devices.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TranscribeTitan -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">TranscribeTitan</h3>
+                            <a href="https://TranscribeTitan.pythonanywhere.com" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Mistral AI</span>
+                            <span class="tech-tag">Google API</span>
+                        </div>
+                        <div class="project-description">
+                            <ul>
+                                <li>Designed and developed an AI-powered website that converts voice input into text and translates it into multiple languages in real-time.</li>
+                                <li>Leveraged advanced speech recognition and AI translation technologies to deliver accurate, fast, and user-friendly results.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elementary Website -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Elementary Learning Platform</h3>
+                            <a href="https://Ceddddddd.pythonanywhere.com" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-description">
+                            <ul>
+                                <li>Developed a Digital Learning Website tailored for elementary students, designed to promote interactive and engaging educational experiences.</li>
+                                <li>Delivered as a paid project, meeting client requirements and contributing to the advancement of digital learning tools.</li>
+                                <li>Enabled researchers to gather valuable insights into the effectiveness of digital learning methods.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Croptopia -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Croptopia Mobile App</h3>
+                            <a href="https://expo.dev/artifacts/eas/cH2HGSiJMkYozZ8wGEbp3K.apk" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Expo</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Weather API</span>
+                            <span class="tech-tag">Plant API</span>
+                        </div>
+                        <div class="project-description">
+                            <ul>
+                                <li>Designed and developed a mobile application for farmers with a user-friendly UI, enabling them to predict local market prices and receive crop recommendations.</li>
+                                <li>Integrated predictive analytics and real-time data to provide actionable insights for informed decision-making about crop selection and planting schedules.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h4>Python Developer</h4>
+                        <h5>AK Holding - AI-driven Tech Startup</h5>
+                        <p class="date">November 2024 - Present</p>
+                        <ul>
+                            <li>Refactored legacy code to enhance reliability, scalability, and maintainability, resulting in a more robust and efficient system.</li>
+                            <li>Designed and implemented a Multi-LLM (Large Language Model) feature, significantly improving the performance and versatility of the AI application.</li>
+                            <li>Identified and resolved critical bugs and code issues within the existing codebase, ensuring smoother operations and reducing technical debt.</li>
+                            <li>Spearheaded the development of a high-performance data processing script capable of handling millions of records, ensuring scalability and efficiency.</li>
+                            <li>Successfully implemented Langgraph within a tight one-week deadline, demonstrating rapid adaptability and technical expertise.</li>
+                            <li>Utilized AI tools including Windsurf, Claude, OpenAI, and Langgraph Studio.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-content">
+                        <h4>Freelance Developer</h4>
+                        <h5>Department of Tourism</h5>
+                        <p class="date">December 2024 - January 2025</p>
+                        <ul>
+                            <li>Designed and developed a comprehensive Booking Web Application for tourist spots, hotels, and resorts in Guinayangan, Quezon, utilizing Django framework.</li>
+                            <li>Enabled seamless booking and reservation management, enhancing user experience and operational efficiency for local businesses.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Contact Information</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="contact-details">
+                                <div class="contact-item mb-4" data-aos="fade-up">
+                                    <i class="fas fa-user"></i>
+                                    <div class="content">
+                                        <h5>Name</h5>
+                                        <p>Jhan Cedric Antonio</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item mb-4" data-aos="fade-up" data-aos-delay="100">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="content">
+                                        <h5>Phone</h5>
+                                        <p>09816858422</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item mb-4" data-aos="fade-up" data-aos-delay="200">
+                                    <i class="fas fa-envelope"></i>
+                                    <div class="content">
+                                        <h5>Email</h5>
+                                        <p><a href="mailto:antoniojhancedric@gmail.com">antoniojhancedric@gmail.com</a></p>
+                                    </div>
+                                </div>
+                                <div class="contact-item mb-4" data-aos="fade-up" data-aos-delay="300">
+                                    <i class="fab fa-linkedin"></i>
+                                    <div class="content">
+                                        <h5>LinkedIn</h5>
+                                        <p><a href="https://www.linkedin.com/in/jhan-cedric-antonio-435666297/" target="_blank">Jhan Cedric Antonio</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 AI Developer Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
