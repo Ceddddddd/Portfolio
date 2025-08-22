@@ -12,21 +12,58 @@ mistral = MistralClient(api_key=os.environ["MISTRAL_API_KEY"])
 # Your personal information - customize this
 PERSONAL_INFO = """
 Name: Jhan Cedric Antonio
+Birthday: August 6, 2003
 Role: Python AI Developer
-Skills: Python, AI/ML, Large Language Models, Full Stack Development
-Experience: 
-- Python Developer at AK Holding (AI-driven Tech Startup)
-- Freelance Developer for Department of Tourism
+Location: Taguig City, Philippines
+Skills:
+- Python, AI/ML, Large Language Models (LLMs), Multi-LLM Systems
+- RAG, Embeddings, FAISS
+- Django, Next.js, FastAPI, React Native
+- MySQL, DBeaver, DigitalOcean, Linux, Git
+
+Experience:
+- Fullstack Developer — Ice Bear Solution — Part-time — Remote (Germany) — Mar 2025 - Aug 2025 (6 mos)
+  * Partnered with cross-functional teams (Design, Legal, Marketing, Data) to deliver a production-ready web app.
+  * Refactored legacy codebase to enhance modularity, maintainability, and performance.
+  * Ensured cohesive integration of UI/UX and core functionality across the platform.
+  * Benchmarked base LLMs for domain tasks to establish baselines for future fine-tuning.
+
+- Python Developer — AK Holding (AI-driven Tech Startup) — Nov 2024 - Apr 2025
+  * Refactored legacy code to improve reliability, scalability, and maintainability.
+  * Built a high-performance data processing pipeline handling millions of records.
+  * Implemented Langgraph within a tight one-week timeline.
+  * Utilized AI tools: Windsurf, Claude, OpenAI, Langgraph Studio.
+
+- Freelance Developer — Department of Tourism — Dec 2024 - Jan 2025
+  * Built a comprehensive Booking Web Application (Django) for tourist spots, hotels, and resorts in Guinayangan, Quezon.
+  * Enabled seamless booking and reservation management to improve UX and operations.
+
 Projects:
 - Tourism Website (Guinayangan Booking System)
+  URL: https://www.guinayangan.site/
+  Stack: Django, Bootstrap
+  Highlights: Dynamic tourism website with integrated booking; deployed and optimized for performance and responsiveness.
+
 - TranscribeTitan (AI-powered voice-to-text translation)
+  URL: https://TranscribeTitan.pythonanywhere.com
+  Stack: Django, AI/ML
+  Highlights: Converts voice input to text and translates into multiple languages in real time.
+
 - Elementary Learning Platform
+  URL: https://Ceddddddd.pythonanywhere.com
+  Stack: Django, HTML, CSS, JavaScript
+  Highlights: Digital learning platform for elementary students; delivered as a paid project and used for research insights.
+
 - Croptopia Mobile App (Farming predictions and recommendations)
-Education:  Polytechnic University of the Philippines
-Bachelor's of science in Information Technology, August 2021- 2025
-Contact: 
+  URL: https://expo.dev/artifacts/eas/cH2HGSiJMkYozZ8wGEbp3K.apk
+  Stack: React Native, Django, Expo, XGBoost, Pandas, Weather API, Plant API
+  Highlights: Predicts local market prices and provides crop recommendations using predictive analytics and real-time data.
+
+Education:
+- Polytechnic University of the Philippines — Bachelor of Science in Information Technology — Aug 2021 - 2025
+
+Contact:
 - Email: antoniojhancedric@gmail.com
-- Phone: 09816858422
 - LinkedIn: https://www.linkedin.com/in/jhan-cedric-antonio-435666297/
 """
 
