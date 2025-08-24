@@ -452,7 +452,6 @@ body {
 
 /* Project Cards */
 #projects {
-    background: var(--light-color);
     padding: 4rem;
 }
 
@@ -750,6 +749,9 @@ body {
 }
 
 /* Skills */
+#skills {
+    background: var(--light-color);
+}
 .skills-list li {
     margin-bottom: 1rem;
 }

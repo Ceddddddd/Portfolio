@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="/static/css/style.css">
     <style>
         @media (max-width: 768px) {
             .hero-content h1.display-1 {
@@ -137,223 +137,39 @@
             </div>
         </div>
     </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4" data-aos="fade-up">Technical Skills</h2>
-            
-            <!-- AI/ML Skills -->
-            <div class="skill-category mb-4">
-                <h3 class="text-center mb-3" data-aos="fade-up">AI Development</h3>
-                <div class="row justify-content-center g-3">
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <img src="/static/img/skills/python.svg" alt="Python" class="skill-logo">
-                            <h5 class="skill-name">Python</h5>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <img src="/static/img/skills/ai.svg" alt="AI/ML" class="skill-logo">
-                            <h5 class="skill-name">AI/ML</h5>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <i class="fas fa-project-diagram skill-logo"></i>
-                            <h5 class="skill-name">Langgraph</h5>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <i class="fas fa-robot skill-logo"></i>
-                            <h5 class="skill-name">Claude</h5>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <img src="{{ url_for('static', filename='img/skills/chatgpt.svg') }}" alt="ChatGPT" class="skill-logo">
-                            <h5 class="skill-name">ChatGPT</h5>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <i class="fas fa-microchip skill-logo"></i>
-                            <h5 class="skill-name">Ollama</h5>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <i class="fas fa-gem skill-logo"></i>
-                            <h5 class="skill-name">Gemini</h5>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <i class="fas fa-layer-group skill-logo"></i>
-                            <h5 class="skill-name">Embeddings</h5>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <i class="fas fa-diagram-project skill-logo"></i>
-                            <h5 class="skill-name">RAG Applications</h5>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <i class="fas fa-database skill-logo"></i>
-                            <h5 class="skill-name">FAISS</h5>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Web Development Skills -->
-            <div class="skill-category mb-4">
-                <h3 class="text-center mb-3" data-aos="fade-up">Web Development</h3>
-                <div class="row justify-content-center g-3">
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <img src="/static/img/skills/html5.svg" alt="HTML" class="skill-logo">
-                            <h5 class="skill-name">HTML</h5>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <img src="/static/img/skills/css3.svg" alt="CSS" class="skill-logo">
-                            <h5 class="skill-name">CSS</h5>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <img src="/static/img/skills/javascript.svg" alt="JavaScript" class="skill-logo">
-                            <h5 class="skill-name">JavaScript</h5>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <img src="/static/img/skills/react.svg" alt="React" class="skill-logo">
-                            <h5 class="skill-name">React</h5>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <i class="fas fa-layer-group skill-logo"></i>
-                            <h5 class="skill-name">Next.js</h5>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Backend & Tools -->
-            <div class="skill-category">
-                <h3 class="text-center mb-3" data-aos="fade-up">Backend & Tools</h3>
-                <div class="row justify-content-center g-3">
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <img src="{{ url_for('static', filename='img/skills/django.svg') }}" alt="Django" class="skill-logo">
-                            <h5 class="skill-name">Django</h5>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <img src="{{ url_for('static', filename='img/skills/git.svg') }}" alt="Git" class="skill-logo">
-                            <h5 class="skill-name">Git</h5>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <i class="fas fa-code skill-logo"></i>
-                            <h5 class="skill-name">Windsurf</h5>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <img src="/static/img/skills/pandas.svg" alt="Pandas" class="skill-logo">
-                            <h5 class="skill-name">Pandas</h5>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <img src="/static/img/skills/docker.svg" alt="Docker" class="skill-logo">
-                            <h5 class="skill-name">Docker</h5>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <img src="/static/img/skills/linux.svg" alt="Linux" class="skill-logo">
-                            <h5 class="skill-name">Linux</h5>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <i class="fas fa-bolt skill-logo"></i>
-                            <h5 class="skill-name">FastAPI</h5>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <i class="fas fa-cloud skill-logo"></i>
-                            <h5 class="skill-name">DigitalOcean</h5>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Databases -->
-            <div class="skill-category">
-                <h3 class="text-center mb-3" data-aos="fade-up">Databases</h3>
-                <div class="row justify-content-center g-3">
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <i class="fas fa-database skill-logo"></i>
-                            <h5 class="skill-name">MySQL</h5>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
-                        <div class="skill-item">
-                            <i class="fas fa-tools skill-logo"></i>
-                            <h5 class="skill-name">DBeaver</h5>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Projects Section -->
     <section id="projects" class="section-padding">
         <canvas id="particleCanvas" class="particle-canvas"></canvas>
         <div class="container bg-gray">
             <h2 class="text-center mb-5" data-aos="fade-up">Featured Projects</h2>
             <div class="row g-4">
+                <!-- AI-powered Gym Website -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">AI-powered Gym Website</h3>
+                            <a href="https://gym-app-q7zg.vercel.app/" class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Embeddings</span>
+                            <span class="tech-tag">Vectorization</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">LLM</span>
+                        </div>
+                        <div class="project-description">
+                            <ul>
+                                <li>Integrated Large Language Models (LLMs) with Retrieval-Augmented Generation (RAG) to deliver intelligent, context-aware workout recommendations and chatbot interactions.</li>
+                                <li>Developed a full-stack AI-powered fitness web application using Next.js (frontend) and FastAPI (backend), showcasing seamless integration between UI and scalable API services.</li>
+                                <li>Engineered vector embeddings and search using custom-trained data to power semantic search and personalized fitness advice.</li>
+                                <li>Applied best practices in clean code, modular architecture, and responsive design for a production-ready, scalable AI application.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <!-- Tourism Website -->
                 <div class="col-lg-6" data-aos="fade-up">
                     <div class="project-card">
@@ -459,7 +275,215 @@
             </div>
         </div>
     </section>
+ <!-- Skills Section -->
+ <section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4" data-aos="fade-up">Technical Skills</h2>
+        
+        <!-- AI/ML Skills -->
+        <div class="skill-category mb-4">
+            <h3 class="text-center mb-3" data-aos="fade-up">AI Development</h3>
+            <div class="row justify-content-center g-3">
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <img src="/static/img/skills/python.svg" alt="Python" class="skill-logo">
+                        <h5 class="skill-name">Python</h5>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <img src="/static/img/skills/ai.svg" alt="AI/ML" class="skill-logo">
+                        <h5 class="skill-name">AI/ML</h5>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <i class="fas fa-project-diagram skill-logo"></i>
+                        <h5 class="skill-name">Langgraph</h5>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <i class="fas fa-robot skill-logo"></i>
+                        <h5 class="skill-name">Claude</h5>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <img src="/static/img/skills/chatgpt.svg" alt="ChatGPT" class="skill-logo">
+                        <h5 class="skill-name">ChatGPT</h5>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <i class="fas fa-microchip skill-logo"></i>
+                        <h5 class="skill-name">Ollama</h5>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <i class="fas fa-gem skill-logo"></i>
+                        <h5 class="skill-name">Gemini</h5>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <i class="fas fa-layer-group skill-logo"></i>
+                        <h5 class="skill-name">Embeddings</h5>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <i class="fas fa-diagram-project skill-logo"></i>
+                        <h5 class="skill-name">RAG Applications</h5>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <i class="fas fa-database skill-logo"></i>
+                        <h5 class="skill-name">FAISS</h5>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Web Development Skills -->
+        <div class="skill-category mb-4">
+            <h3 class="text-center mb-3" data-aos="fade-up">Web Development</h3>
+            <div class="row justify-content-center g-3">
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <img src="/static/img/skills/html5.svg" alt="HTML" class="skill-logo">
+                        <h5 class="skill-name">HTML</h5>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <img src="/static/img/skills/css3.svg" alt="CSS" class="skill-logo">
+                        <h5 class="skill-name">CSS</h5>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <img src="/static/img/skills/javascript.svg" alt="JavaScript" class="skill-logo">
+                        <h5 class="skill-name">JavaScript</h5>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <img src="/static/img/skills/react.svg" alt="React" class="skill-logo">
+                        <h5 class="skill-name">React</h5>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <i class="fas fa-layer-group skill-logo"></i>
+                        <h5 class="skill-name">Next.js</h5>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backend & Tools -->
+        <div class="skill-category">
+            <h3 class="text-center mb-3" data-aos="fade-up">Backend & Tools</h3>
+            <div class="row justify-content-center g-3">
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <img src="/static/img/skills/django.svg" alt="Django" class="skill-logo">
+                        <h5 class="skill-name">Django</h5>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <img src="/static/img/skills/git.svg" alt="Git" class="skill-logo">
+                        <h5 class="skill-name">Git</h5>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <i class="fas fa-code skill-logo"></i>
+                        <h5 class="skill-name">Windsurf</h5>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <img src="/static/img/skills/pandas.svg" alt="Pandas" class="skill-logo">
+                        <h5 class="skill-name">Pandas</h5>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <img src="/static/img/skills/docker.svg" alt="Docker" class="skill-logo">
+                        <h5 class="skill-name">Docker</h5>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <img src="/static/img/skills/linux.svg" alt="Linux" class="skill-logo">
+                        <h5 class="skill-name">Linux</h5>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <i class="fas fa-bolt skill-logo"></i>
+                        <h5 class="skill-name">FastAPI</h5>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <i class="fas fa-cloud skill-logo"></i>
+                        <h5 class="skill-name">DigitalOcean</h5>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category">
+            <h3 class="text-center mb-3" data-aos="fade-up">Databases</h3>
+            <div class="row justify-content-center g-3">
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <i class="fas fa-database skill-logo"></i>
+                        <h5 class="skill-name">MySQL</h5>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6" data-aos="zoom-in">
+                    <div class="skill-item">
+                        <i class="fas fa-tools skill-logo"></i>
+                        <h5 class="skill-name">DBeaver</h5>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- Experience Section -->
     <section id="experience" class="py-5">
         <div class="container">
@@ -558,7 +582,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="/static/js/main.js"></script>
          <!-- Chat Interface -->
     <div class="chat-container open">
         <div class="chat-header" onclick="toggleChat()">
